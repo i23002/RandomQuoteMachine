@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import './App.css';
 
 
 // declare an iterator
 // eslint-disable-next-line no-unused-vars
-
+// declare inline styles
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -53,12 +54,22 @@ class App extends React.Component {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
       return <div>Loading...</div>;
-    } else {
+    } else if(items[this.state.i].author === null){
+      items[this.state.i].author = 'Unknown'
+      return(
+        <div id="quote_box">
+          <h1 id="text">{items[this.state.i].text}</h1>
+          <h2 id="author">-{items[this.state.i].author}</h2>
+          <button onClick={this.Increment} id="new-quote">Click Here</button>
+        </div>
+      )
+    }
+     else {
       return (
-        <div>
-          <h1>{items[this.state.i].text}</h1>
-          <h2>{items[this.state.i].author}</h2>
-          <button onClick={this.Increment}>Click Here</button>
+        <div id="quote_box">
+          <h1 id="text">{items[this.state.i].text}</h1>
+          <h2 id="author">-{items[this.state.i].author}</h2>
+          <button onClick={this.Increment} id="new-quote">Click Here</button>
         </div>
       );
     }
