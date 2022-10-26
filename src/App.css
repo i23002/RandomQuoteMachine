@@ -40,21 +40,27 @@
   margin: auto;
   font-size: 2vmin;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  border: 5px solid green;
+  border: 2px solid whitesmoke;
   width: 50%;
   height: 33vh;
   padding: 10px;
   margin-top: 10%;
   margin-bottom: 10%;
+  
 }
 #quote_box h1{
   font-size: 4.5vmin;
   margin-bottom: 5%;
+  font-style: italic;
+
+
 }
 #quote_box h2{
   text-align: right;
   position: relative;
   top: 02%;
+  font-style: italic;
+
 }
 #new-quote{
   position: fixed;
