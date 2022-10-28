@@ -56,26 +56,26 @@ class App extends React.Component {
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div id="quote-box"><h1>Loading...</h1></div>;
     } else if(items[this.state.i].author === null){
       items[this.state.i].author = 'Unknown'
       return(
-        <div id="quote_box">
+        <div id="quote-box">
           <h1 id="text">{items[this.state.i].text}</h1>
           <h2 id="author">-{items[this.state.i].author}</h2>
-          <button onClick={this.Increment} id="new-quote">Click Here</button>
-          <a className="twitter-share-button" href={`https://twitter.com/intent/tweet?text=${items[this.state.i].text}--${items[this.state.i].author}`}>Tweet</a>
+          <button onClick={this.Increment} id="new-quote">New Quote</button>
+          <a className="twitter-share-button btn btn-primary" href={`https://twitter.com/intent/tweet?text=${items[this.state.i].text}--${items[this.state.i].author}`}>Tweet</a>
         </div>
         
       )
     }
      else {
       return (
-        <div id="quote_box">
+        <div id="quote-box">
           <h1 id="text"><u>{items[this.state.i].text}</u></h1>
           <h2 id="author"><u>-{items[this.state.i].author}</u></h2>
-          <button onClick={this.Increment} id="new-quote">Click Here</button>
-          <a className="twitter-share-button" href={`https://twitter.com/intent/tweet?text=${items[this.state.i].text}--${items[this.state.i].author}`} target="_blank" rel="noreferrer">Tweet</a>
+          <button onClick={this.Increment} id="new-quote">New Quote</button>
+          <a className="twitter-share-button btn btn-primary" href={`https://twitter.com/intent/tweet?text=${items[this.state.i].text}--${items[this.state.i].author}`} target="_blank" rel="noreferrer">Tweet</a>
         </div>
       );
     }

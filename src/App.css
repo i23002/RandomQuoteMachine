@@ -36,26 +36,27 @@
     transform: rotate(360deg);
   }
 }
-#quote_box{
+#quote-box{
   margin: auto;
   font-size: 2vmin;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  border: 5px solid #1b1b32;
+  border: 5px solid skyblue;
   width: 50%;
-  height: 33vh;
-  padding: 10px;
+  height: 37vh;
+  padding: 20px;
   margin-top: 10%;
   margin-bottom: 10%;
+
   
 }
-#quote_box h1{
+#quote-box h1{
   font-size: 4.5vmin;
   margin-bottom: 5%;
   font-style: italic;
 
 
 }
-#quote_box h2{
+#quote-box h2{
   text-align: right;
   position: relative;
   top: 02%;
@@ -66,9 +67,11 @@
   position: fixed;
   right: 25%; 
   margin-top: 10px;
-  top: 50%;
+  top: 58%;
   margin-right: 10px;
   padding: 5px 10px 5px 10px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  background-color: rgb(243, 156, 18);
+  color: white;
 }
