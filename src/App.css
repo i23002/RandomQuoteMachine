@@ -61,17 +61,46 @@
   position: relative;
   top: 02%;
   font-style: italic;
+  font-size: 4.5vmin;
 
 }
 #new-quote{
-  position: fixed;
-  right: 25%; 
+  position: absolute;
+  right: 25%;
+  top: 58%; 
   margin-top: 10px;
-  top: 58%;
   margin-right: 10px;
   padding: 5px 10px 5px 10px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   background-color: rgb(243, 156, 18);
   color: white;
+}
+.twitter-share-button{
+  position: absolute;
+  top: 58%;
+}
+
+@media (max-width:815px){
+  #quote-box{
+    height: 47vh;
+    padding-top: 10%;
+    padding-bottom: -5%;
+    margin-bottom: -10%;
+  }
+  #quote-box h2{
+    position: relative;
+  }
+  #new-quote{
+    position: absolute;
+    margin-top: 3.5vh;
+    top: 52%;
+  }
+  .twitter-share-button{
+    position: absolute;
+    margin-top: 2.5vh;
+    top: 52%;
+    height: 5.5%;
+    
+  }
 }
