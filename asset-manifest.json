@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RandomQuoteMachine/static/css/main.75841315.css",
+    "main.js": "/RandomQuoteMachine/static/js/main.5527b9e7.js",
+    "index.html": "/RandomQuoteMachine/index.html",
+    "main.75841315.css.map": "/RandomQuoteMachine/static/css/main.75841315.css.map",
+    "main.5527b9e7.js.map": "/RandomQuoteMachine/static/js/main.5527b9e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75841315.css",
+    "static/js/main.5527b9e7.js"
+  ]
+}
